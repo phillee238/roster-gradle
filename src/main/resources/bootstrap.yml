@@ -1,0 +1,15 @@
+---
+spring:
+  application:
+    name: roster
+  cloud:
+    config:
+      uri: ${vcap.services.config-server-uri.credentials.uri}
+
+management:
+  security:
+    enabled: false
+
+security:
+ basic:
+   enabled: false  
